@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1680923219 source:c:\users\vitor\documents\projetos c++\gerador de cpf\main.cpp
+	<iostream>
+	<ctime>
+
