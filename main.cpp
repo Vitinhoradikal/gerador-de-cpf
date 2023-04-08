@@ -14,7 +14,7 @@ string gerador()
 
     for(int i = 0; i < 9; i++)
     {
-        num[i] = rand() % 9;
+        num[i] = rand() % 10;
     }
       for (int i = 0; i < 9; i++) {
         num_str += to_string(num[i]); //converte cada elemento do array para uma string e adiciona à string resultante
@@ -86,6 +86,7 @@ int geraDigitosVerificadores(string cpf)
  cpf_array[10] = digito2;
 
  /*imprime o cpf com os caracteres especiais*/
+ cout << "#################" << endl;
  for(int i = 0; i<11;i++)
  {
      if(i == 3 || i == 6)
@@ -95,6 +96,7 @@ int geraDigitosVerificadores(string cpf)
 
      cout << cpf_array[i];
  }
+  cout << endl << "#################" << endl;
 
     return 0;
 }
