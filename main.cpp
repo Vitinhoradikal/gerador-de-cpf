@@ -6,8 +6,6 @@ using namespace std;
 
 string gerador()
 {
-
-
      int num[9];
      string num_str = "";
     srand(time(nullptr));
@@ -45,8 +43,6 @@ int geraDigitosVerificadores(string cpf)
             }
         }
 
-
-
  /*gera o primeiro digito do cpf*/
  for(int i = 0; i < 9; i++)
  {
@@ -72,7 +68,6 @@ int geraDigitosVerificadores(string cpf)
      verificaDigito2[i] = cpf_array[i]*(11-i);
      acumulador2= acumulador2+verificaDigito2[i];
  }
-
 
   if(acumulador2 % 11 == 0|| acumulador2 % 11 == 1)
  {
